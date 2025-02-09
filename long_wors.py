@@ -1,7 +1,24 @@
 def print_long_words(text: str):
-    a:set = { 'а', 'о', 'э', 'и', 'у', 'ы', 'е', 'ё', 'ю', 'я', 'a', 'e', 'i', 'o', 'u', 'y'}
-    text = text.replace("," , "")
-    text = text.replace("." , "")
+    a: set = {
+        "а",
+        "о",
+        "э",
+        "и",
+        "у",
+        "ы",
+        "е",
+        "ё",
+        "ю",
+        "я",
+        "a",
+        "e",
+        "i",
+        "o",
+        "u",
+        "y",
+    }
+    text = text.replace(",", "")
+    text = text.replace(".", "")
     list1 = text.split()
     s = 0
     for char in a:
@@ -11,9 +28,7 @@ def print_long_words(text: str):
                 if s >= 4:
                     print(list1[i])
 
-            
 
-
-
-
-print_long_words('Как и в прочих заданиях этого урока, в вашем решении функция должна быть определена, но не должна вызываться.')
+print_long_words(
+    "Как и в прочих заданиях этого урока, в вашем решении функция должна быть определена, но не должна вызываться."
+)
