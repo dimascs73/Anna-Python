@@ -1,11 +1,11 @@
 def func(*all, **dic_t):
     if dic_t:
         arr: dict = {}
-        arr = {key: val for key, val in dic_t.items()}
+        arr ={'logins': {key: val for key, val in dic_t.items()}}
         return arr
     elif all:
         lst = []
-        lst = [val for val in all]
+        lst = [val.lower() for val in all]
         return lst
 
 
