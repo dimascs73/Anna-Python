@@ -12,3 +12,5 @@ def func(*all, **dic_t):
 print(func("argU", "monEy", "Plus"))
 
 print(func(key1=5, key2=2))
+
+#test of git
