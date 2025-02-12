@@ -1,6 +1,12 @@
-base = ('Ivan', 12, 'jan'), ('Peter', 22, 'mar'), ('Petir', 25, 'mar'), ('Olla', 7, 'jan')
+def up_per(func):
+    def u1(*letters):
+        uper_case = [str(letter).upper() for letter in letters]
+        func(*uper_case)
+    return u1
+print = up_per(print)
 
 
-di_ct = {name: {month: (name, date)} for name, date, month in base}
 
-print(di_ct)
+
+
+print('Нельзя ли потише?')
