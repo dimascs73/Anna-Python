@@ -1,16 +1,6 @@
-def func(*all, **dic_t):
-    if dic_t:
-        arr: dict = {}
-        arr ={'logins': {key: val for key, val in dic_t.items()}}
-        return arr
-    elif all:
-        lst = []
-        lst = [val.lower() for val in all]
-        return lst
+base = ('Ivan', 12, 'jan'), ('Peter', 22, 'mar'), ('Petir', 25, 'mar'), ('Olla', 7, 'jan')
 
 
-print(func("argU", "monEy", "Plus"))
+di_ct = {name: {month: (name, date)} for name, date, month in base}
 
-print(func(key1=5, key2=2))
-
-#test of git
+print(di_ct)
